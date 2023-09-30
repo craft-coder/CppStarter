@@ -1,22 +1,8 @@
-#include <stdexcept>
-#include <string>
+#include <iostream>
 
 using namespace std;
 
-extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
-  auto name = string((char *)data, size);
-
-  if (name.size() < 30) {
-    return 1;
-  }
-
-  if (name.substr(1, 6) == "Marius") {
-    throw runtime_error("WOW!!!");
-  }
-
-  return 0;
-}
-
 int main() {
+  cout << "Hello world" << "\n";
   return 0;
 }
