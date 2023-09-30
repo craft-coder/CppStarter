@@ -1,5 +1,7 @@
 # Basic C++ Project
 
+[![CMake on multiple platforms](https://github.com/craft-coder/CppStarter/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/craft-coder/CppStarter/actions/workflows/cmake-multi-platform.yml)
+
 This is a basic project including C++ sources, tests, package management and CI automation.
 
 ## Getting started
