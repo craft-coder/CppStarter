@@ -5,7 +5,7 @@
 namespace mari {
 class ConsoleOutput : public virtual OutputInterface {
   public:
-    void print(std::string_view s) override {
+    void print(const std::string& s) override {
       std::cout << s;
     };
 };

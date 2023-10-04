@@ -1,10 +1,10 @@
 #pragma once
-#include <string_view>
+#include <string>
 
 namespace mari {
 class OutputInterface {
   public:
     virtual ~OutputInterface() = default;
-    virtual void print(std::string_view) = 0;
+    virtual void print(const std::string&) = 0;
 };
 }
