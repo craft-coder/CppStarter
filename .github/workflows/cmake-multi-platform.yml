@@ -66,6 +66,7 @@ jobs:
         -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
         -DCMAKE_CXX_STANDARD=17
         -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
+        -Dgtest_force_shared_crt="ON"
         -S ${{ github.workspace }}
 
     - name: Build
